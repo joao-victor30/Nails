@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- estilos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,
+        200;0,300;0,400;0,500;0,600;0,700;0,
+        800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,
+        900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="IMG/FAVICON.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+
+    <!-- icones -->
+    <script src="https://kit.fontawesome.com/c0af952894.js" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="JS/script.js" defer></script>
+
+    <title>Hanna Nails Design</title>
+</head>
+
+<body>
+
+    <main class="main-container">
+
+        <header class="header-container">
+            <nav class="navbar">
+                <button onclick="secao('home')">Home</button>
+                <button onclick="secao('design-services')">Design & Serviços</button>
+                <button onclick="secao('results')">Ver Resultados</button>
+            </nav>
+        </header>
+
+
+        <section id="home" class="sec ativa">
+
+            <div id="logo">
+                <img src="IMG/hanna.png" alt="Hanna Nails desenho">
+                <h1>Hanna Nails</h1>
+                <p>Conte uma nova história com suas unhas!</p>
+            </div>
+
+            <div id="action">
+                <a href="https://wa.me/5573999086501?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20nails."
+                    target="_blank" rel="noopener"><img src="IMG/whatsapp.png" alt="whatsapp"></a>
+
+            </div>
+
+
+        </section>
+
+        <section id="design-services" class="sec">
+
+            <article id="exemples">
+
+                <div class="nails-container">
+
+                    <span class="nails-mode">Modelos para suas unhas</span>
+
+                    <div class="image-card">
+                        <img src="IMG/amondoun.png" alt="exemples nails amondoun">
+                        <div class="image-label">Amondoun</div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="IMG/bailarina.png" alt="exemples nails bailarina">
+                        <div class="image-label">Bailarina</div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="IMG/quadrada.png" alt="exemples nails quadrada">
+                        <div class="image-label">Quadrada</div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="IMG/stilleto.png" alt="exemples nails stilleto">
+                        <div class="image-label">Stilleto</div>
+                    </div>
+                </div>
+
+                <div class="design-container">
+
+                    <span class="design-mode">Decoração para suas unhas</span>
+
+                    <div class="image-card">
+                        <img src="IMG/babyboomer.png" alt="exemples baby boomer">
+                        <div class="image-label">Baby Boomer</div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="IMG/babycolor.png" alt="exemples baby color">
+                        <div class="image-label">Baby Color</div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="IMG/cascata de glitter.png" alt="exemples glitter">
+                        <div class="image-label">Cascata de Glitter</div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="IMG/encapsulada.png" alt="exemples encapsulada">
+                        <div class="image-label">Encapsulada</div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="IMG/francesinha reversa.png" alt="exemples francesinha">
+                        <div class="image-label">Francesinha Reversa</div>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="IMG/natural.png" alt="exemples natural">
+                        <div class="image-label">Natural</div>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article id="services">
+                <div class="container-tabelas">
+
+                    <table class="container-table">
+                        <thead>
+                            <tr>
+                                <th onclick="toggleTabela(this)">Aplicações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Unhas de Fibra/Natural</td>
+                            </tr>
+                            <tr>
+                                <td>Unhas de Fibra</td>
+                            </tr>
+                            <tr>
+                                <td>Banho de Gel</td>
+                            </tr>
+                            <tr>
+                                <td>Blindagem/Esmaltação</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="container-table">
+                        <thead>
+                            <tr>
+                                <th onclick="toggleTabela(this)">Manutenção</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Unhas de Fibra</td>
+                            </tr>
+                            <tr>
+                                <td>Banho de Gel</td>
+                            </tr>
+                            <tr>
+                                <td>Unha natural</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="container-table">
+                        <thead>
+                            <tr>
+                                <th onclick="toggleTabela(this)">Decoração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Glitter</td>
+                            </tr>
+                            <tr>
+                                <td>Pedraria</td>
+                            </tr>
+                            <tr>
+                                <td>Encapsulado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="container-table">
+                        <thead>
+                            <tr>
+                                <th onclick="toggleTabela(this)">Bem-estar das Unhas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Manicure</td>
+                            </tr>
+                            <tr>
+                                <td>Pedicure</td>
+                            </tr>
+                            <tr>
+                                <td>Spa dos Pés</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </article>
+        </section>
+
+        <section id="results" class="sec">
+
+            <h3>Conheça meu cuidado especial com cada unha, feita com amor.</h3>
+
+            <div class="media-social">
+                <a href="https://www.instagram.com/hannaalvesnails/?igsh=MXdscW5zcXNtcWh2YQ%3D%3D#" target="_blank"
+                    rel="noopener"><img src="IMG/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/hana.alves.90?rdid=qj6pu1HpxgAqKSwM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GQqqRh1mv%2F#"
+                    target="_blank" rel="noopener"><img src="IMG/facebook.png" alt="facebook">
+                </a>
+            </div>
+
+            <span>Fique à vontade para me seguir e acompanhar novidades.</span>
+
+            <div class="logo">
+                <img src="IMG/logo end page.png" alt=" logo do fim da pagina">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-container">
+        <p>&copy;Direitos reservados a Hanna Nails 2025</p>
+    </footer>
+
+</body>
+
+</html>
